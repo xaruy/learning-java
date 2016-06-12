@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+       
+       <bean id="duke" class="com.xaruy.springinaction.springidol.Juggler">
+           <constructor-arg value="15" />
+       </bean>
+       
+       <bean id="sonnet29" class="com.xaruy.springinaction.springidol.Sonnet29" />
+       
+       <bean id="poeticDuke" class="com.xaruy.springinaction.springidol.PoeticJuggler">
+           <constructor-arg ref="sonnet29" />
+           <constructor-arg value="15" />
+       </bean>
+       
+       <bean id="theStage" class="com.xaruy.springinaction.springidol.Stage" factory-method="getInstance" />
+       
+       <bean id="saxophone" class="com.xaruy.springinaction.springidol.Saxophone" />
+       <bean id="piano" class="com.xaruy.springinaction.springidol.Piano" />
+       
+       <bean id="kenny" class="com.xaruy.springinaction.springidol.Instrumentalist"
+             p:song = "Jingle Bells"
+             p:instrument-ref = "piano">
+       </bean>
+       
+       <bean id="hank" class="com.xaruy.springinaction.springidol.OneManBand">
+           <property name="instruments">
+               <list>
+                  <ref bean="saxophone"/>
+                  <ref bean="piano"/> 
+               </list>
+           </property>
+       </bean>
+       
+       <bean id="hank2" class="com.xaruy.springinaction.springidol.OneManBand2">
+          <property name="instruments">
+             <map>
+                <entry key="SAXOPHONE" value-ref="saxophone" />
+                <entry key="PIANO" value-ref="piano" />
+             </map>
+          </property>
+       </bean>
+       
+       
+</beans>
