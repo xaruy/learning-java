@@ -8,6 +8,10 @@
 
 * √ [Spring实战 第3版 笔记与练习](https://github.com/xaruy/learning-java/wiki/Spring%E5%AE%9E%E6%88%98-%E7%AC%AC3%E7%89%88-%E7%AC%94%E8%AE%B0%E4%B8%8E%E7%BB%83%E4%B9%A0)
 
+* √ [单元测试JUnit4](https://github.com/xaruy/learning-java/wiki/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95JUnit-4)
+
+* √ [Spring整合JUnit4](https://github.com/xaruy/learning-java/wiki/Spring%E6%A1%86%E6%9E%B6%E7%BB%93%E5%90%88Junit4%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95)
+
 ### 欠缺的知识
 
 * 计算机基础理论
